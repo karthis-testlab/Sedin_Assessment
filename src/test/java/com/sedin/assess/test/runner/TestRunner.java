@@ -8,8 +8,12 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		         features = "src/test/java/com/sedin/assess/features/SauceDemo.feature",
 		         glue = "com.sedin.assess.steps",
-		         monochrome = true,		         
-		         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+		         monochrome = true,
+		         plugin = {
+		        		   "pretty",
+		        		   "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+		        		   "rerun:src/test/resources/retry.txt"
+		        		 }
 		        )
 
 
