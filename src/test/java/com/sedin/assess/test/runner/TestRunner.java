@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		         features = "src/test/java/com/sedin/assess/features/SauceDemo.feature",
 		         glue = "com.sedin.assess.steps",
-		         monochrome = true,
+		         monochrome = true,		        
 		         plugin = {
 		        		   "pretty",
 		        		   "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

@@ -13,7 +13,7 @@ Feature: Sauce Demo is site used to cart sauce lab merchandise product
   Scenario: User able to find the product which they want
     When Regitered user able to login with valid user credentials "standard_user" and "secret_sauce"
     Then User able to the see "Sauce Labs Bolt T-Shirt" the product they wants
-
+  
   Scenario: User can compare the all product price in the product detial page
     When Regitered user able to login with valid user credentials "standard_user" and "secret_sauce"
     And User get price of the all products in the product listing page

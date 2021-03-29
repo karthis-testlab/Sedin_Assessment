@@ -49,7 +49,7 @@ public class ProductListService extends ProjectSpecificService {
 		List<WebElement> prices = getWebElements(ReadProperties.readObjectRepositories("ProductListService", "sauce.demo.productlist.price.text"));
 	    for (int i = 0; i < products.size(); i++) {
 			productName = products.get(i).getText().trim();
-			price = JavaHelper.extractString(prices.get(i).getText(), "$");
+			price = JavaHelper.extractString(prices.get(i).getText(), "[$]");
 			map.put(productName, price);
 		}
 		return new ProductDetailService();
